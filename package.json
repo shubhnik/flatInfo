@@ -1,0 +1,56 @@
+{
+  "name": "flat-info",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2"
+  },
+  "devDependencies": {
+    "eslint-config-xo-react": "^0.17.0",
+    "eslint-plugin-react": "^7.11.1",
+    "react-scripts": "1.1.5",
+    "xo": "^0.22.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "xo": {
+    "extends": "xo-react",
+    "env": ["browser"],
+    "space": true,
+    "semicolon": false,
+    "rules": {
+      "react/jsx-no-bind": ["off"],
+      "react/jsx-closing-bracket-location": ["error", "tag-aligned"],
+      "react/forbid-component-props": 1,
+      "react/jsx-handler-names": 1,
+      "radix": 0,
+      "react/require-default-props": 1,
+      "react/no-array-index-key": 1,
+      "react/prop-types": 1,
+      "unicorn/filename-case": ["error", {"case": "camelCase"}],
+      "react/jsx-pascal-case": 1,
+      "react/no-unescaped-entities": 1,
+      "react/jsx-tag-spacing": [
+        "error",
+        {
+          "beforeSelfClosing": true
+        }
+      ],
+      "new-cap": [
+        "error",
+        {
+          "capIsNew": false
+        }
+      ],
+      "operator-linebreak": ["error", "before"],
+      "array-bracket-spacing": ["error", "always"],
+      "comma-dangle": ["error", "always-multiline"],
+      "object-curly-spacing": ["error", "always"]
+    }
+  }
+}
